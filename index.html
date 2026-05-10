@@ -1,254 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<title>Airtel Payments Bank Business Plans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Airtel Sound Box Offer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 70px;
-  }
 
-  header {
-    background: #d91e18;
-    color: white;
-    padding: 15px 20px;
-  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-  .header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+body{
+    background:#f5f5f5;
+    overflow-x:hidden;
+}
 
-  .title h1 { margin: 0; font-size: 22px; }
-  .title p { margin: 0; font-size: 13px; opacity: 0.9; }
+.container{
+    width:100%;
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    min-height:100vh;
+}
 
-  .datetime {
-    font-size: 13px;
-    font-weight: bold;
-    text-align: right;
-  }
+/* HERO */
 
-  .top-btn {
-    text-align: center;
-    margin: 20px;
-  }
+.hero{
+    background:linear-gradient(180deg,#ff0000,#b30000);
+    color:white;
+    padding:30px 20px 40px;
+    text-align:center;
+}
 
-  .btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #0b5ed7;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-  }
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:13px;
+    margin-bottom:18px;
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    flex-wrap: wrap;
-  }
+.hero h1{
+    font-size:36px;
+    line-height:1.2;
+    font-weight:800;
+    margin-bottom:15px;
+}
 
-  .card {
-    background: white;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    text-align: center;
-  }
+.hero p{
+    font-size:16px;
+    line-height:1.6;
+}
 
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-  }
+.offer-box{
+    margin-top:25px;
+    background:#fff;
+    color:#111;
+    border-radius:24px;
+    padding:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.25);
+}
 
-  .price {
-    font-size: 22px;
-    font-weight: bold;
-    color: #d91e18;
-  }
+.offer-title{
+    background:linear-gradient(90deg,#ff0000,#ff4d4d);
+    color:#fff;
+    padding:12px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:700;
+    animation:pulse 1.5s infinite;
+}
 
-  ul { text-align: left; }
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.03);}
+    100%{transform:scale(1);}
+}
 
-  /* FOOTER */
-  .footer-bar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #d91e18;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 12px;
-  }
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:18px;
+}
 
-  .footer-bar button {
-    background: white;
-    color: #d91e18;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+.time-box{
+    background:#111;
+    color:#fff;
+    padding:12px;
+    border-radius:14px;
+    min-width:70px;
+}
 
-  /* POPUP */
-  .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    justify-content: center;
-    align-items: center;
-  }
+.time-box h3{
+    font-size:24px;
+}
 
-  .popup-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 320px;
-    text-align: center;
-  }
+.time-box span{
+    font-size:12px;
+}
 
-  .popup-box input {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0;
-  }
+/* SECTION */
+
+.section{
+    padding:30px 20px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:24px;
+    font-weight:700;
+}
+
+/* IMAGE SLIDER */
+
+.slider{
+    width:100%;
+    aspect-ratio: 433/577;
+    position:relative;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1s ease-in-out;
+    
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* PRICING */
+
+.pricing{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:25px;
+}
+
+.price-card{
+    background:#fff;
+    border-radius:22px;
+    padding:20px;
+    text-align:center;
+    border:2px solid #eee;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.price-card h4{
+    font-size:15px;
+    color:#666;
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff0000;
+    font-size:34px;
+    font-weight:800;
+}
+
+.old-price{
+    font-size:18px;
+    color:#999;
+    text-decoration:line-through;
+    font-weight:500;
+    margin-right:6px;
+}
+
+.small{
+    margin-top:10px;
+    font-size:13px;
+    color:#666;
+    line-height:1.5;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.feature{
+    background:#fff;
+    border-radius:20px;
+    padding:22px 16px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.feature-icon{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+/* FAQ */
+
+.faq-item{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.faq-item h3{
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* CTA */
+
+.cta-section{
+    background:#f8f8f8;
+    text-align:center;
+    padding:30px 20px 100px;
+}
+
+.cta-section h2{
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.btn-group{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:18px;
+    border-radius:18px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn-call{
+    background:#ff0000;
+    color:#fff;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.contact{
+    margin-top:24px;
+    line-height:2;
+}
+
+.contact a{
+    color:#ff0000;
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+    position:fixed;
+    right:18px;
+    bottom:95px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(37,211,102,0.4);
+    z-index:999;
+}
+
+/* STICKY CTA */
+
+.sticky-cta{
+    position:fixed;
+    bottom:15px;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    max-width:460px;
+    z-index:999;
+}
+
+.sticky-btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(90deg,#ff0000,#ff4d4d);
+    color:#fff;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 12px 30px rgba(255,0,0,0.4);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#666;
+    font-size:13px;
+}
+
+@media(max-width:420px){
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .pricing{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+}
+
 </style>
+
 </head>
-
 <body>
-
-<header>
-  <div class="header-box">
-    <div class="title">
-      <h1>Airtel Payment Merchant</h1>
-      <p>Secure Business Plans</p>
-    </div>
-    <div id="clock" class="datetime"></div>
-  </div>
-</header>
-
-<div class="top-btn">
-  <a href="comparison.html" class="btn">View Comparison</a>
-</div>
 
 <div class="container">
 
-  <div class="card">
-    <img src="https://www.airtel.in/bank/ibsv2-assets/Z5olyZbqstJ99_X__qr.avif">
-    <h2>₹899 Plan</h2>
-    <p class="price">1 Year Free</p>
-	<ul>
-      <li>Soundbox Included</li>
-      <li>Zero Balance Account</li>
-      <li>Insurance Benefits</li>
-      <li>Loan Facility</li>
-      <li>After 1 year ₹29/month</li>
-    </ul>
-    <button class="btn" onclick="openForm('₹899 Plan')">Choose</button>
-  </div>
+    <!-- HERO -->
 
-  <div class="card">
-    <img src="https://www.airtel.in/bank/ibsv2-assets/Z5olyZbqstJ99_X__qr.avif">
-    <h2>₹1499 Plan</h2>
-    <p class="price">Lifetime Free</p>
-	<ul>
-      <li>Soundbox Included</li>
-      <li>Zero Balance Account</li>
-      <li>Insurance Benefits</li>
-      <li>Loan Facility</li>
-      <li>No Monthly Charges</li>
-    </ul>
-    <button class="btn" onclick="openForm('₹1499 Plan')">Choose</button>
-  </div>
+    <section class="hero">
+
+        <div class="badge">
+            Limited Time Airtel Offer
+        </div>
+
+        <h1>
+            Get Airtel Sound Box at Special Offer Price!
+        </h1>
+
+        <p>
+            Limited Time Offer from 10 May to 14 May
+        </p>
+
+        <div class="offer-box">
+
+            <div class="offer-title">
+                Book Between 10 May – 14 May & Get 30% Discount!
+            </div>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <h3 id="days">00</h3>
+                    <span>Days</span>
+                </div>
+
+                <div class="time-box">
+                    <h3 id="hours">00</h3>
+                    <span>Hours</span>
+                </div>
+
+                <div class="time-box">
+                    <h3 id="minutes">00</h3>
+                    <span>Minutes</span>
+                </div>
+
+                <div class="time-box">
+                    <h3 id="seconds">00</h3>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Airtel Sound Box
+        </h2>
+
+        <!-- IMAGE SLIDER -->
+
+        <div class="slider">
+
+            <img src="image/image1.png" class="slide active">
+            <img src="image/image2.png" class="slide">
+            <img src="image/image3.png" class="slide">
+
+        </div>
+
+        <!-- PRICING -->
+
+        <div class="pricing">
+
+            <div class="price-card">
+
+                <h4>Lifetime Free Offer</h4>
+
+                <div class="price">
+                    <span class="old-price">₹1499</span>₹1049
+                </div>
+
+                <div class="small">
+                    One Time Payment
+                </div>
+
+            </div>
+
+            <div class="price-card">
+
+                <h4>1 Year Free Plan</h4>
+
+                <div class="price">
+                    <span class="old-price">₹899</span>₹629
+                </div>
+
+                <div class="small">
+                    After 1 Year ₹29/month
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Features
+        </h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="feature-icon">🔊</div>
+                <h3>Loud & Clear Voice Alerts</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Payment Confirmation</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <h3>Easy Setup</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🛡️</div>
+                <h3>Trusted Airtel Service</h3>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🏪</div>
+                <h3>Perfect for Shops & Businesses</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Frequently Asked Questions
+        </h2>
+
+        <div class="faq-item">
+
+            <h3>Is this a music speaker?</h3>
+
+            <p>
+                No. This device announces UPI payment confirmations instantly.
+            </p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h3>Which UPI apps are supported?</h3>
+
+            <p>
+                Supports PhonePe, Google Pay, Paytm, BHIM and all major UPI apps.
+            </p>
+
+        </div>
+
+        <div class="faq-item">
+
+            <h3>Is installation easy?</h3>
+
+            <p>
+                Yes. Quick setup suitable for all businesses.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <h2>
+            Book Your Airtel Sound Box Today
+        </h2>
+
+        <div class="btn-group">
+
+            <a href="tel:9437712047" class="btn btn-call">
+                Call Now
+            </a>
+
+            <a href="https://wa.me/919437712047"
+               target="_blank"
+               class="btn btn-whatsapp">
+
+               Book on WhatsApp
+
+            </a>
+
+        </div>
+
+        <div class="contact">
+
+            📞 Mobile:
+            <a href="tel:9437712047">
+                9437712047
+            </a>
+
+            <br>
+
+            🌐 Website:
+            <a href="https://airteltechnology.in" target="_blank">
+                airteltechnology.in
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer>
+        Limited Period Promotional Offer. Terms & Conditions Apply.
+    </footer>
 
 </div>
 
-<!-- FORM -->
-<div id="formPopup" class="popup">
-  <div class="popup-box">
-    <h3 id="planTitle"></h3>
-    <input placeholder="Name">
-    <input placeholder="Mobile">
-    <button class="btn" onclick="closeForm()">Submit</button>
-  </div>
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/919437712047"
+   target="_blank"
+   class="whatsapp-float">
+
+   💬
+
+</a>
+
+<!-- STICKY CTA -->
+
+<div class="sticky-cta">
+
+    <button class="sticky-btn"
+        onclick="window.location.href='https://wa.me/919437712047'">
+
+        Book Now
+
+    </button>
+
 </div>
-
-<!-- LOAN -->
-<div id="loanPopup" class="popup">
-  <div class="popup-box">
-    <h2>Loan Details</h2>
-    <p><b>Interest Rate:</b> Starting from 9.9% per annum</p>
-    <p>✔ Easy EMI Options<br>✔ Quick Approval<br>✔ Merchant Support</p>
-    <button class="close-btn" onclick="closeLoan()">Close</button>
-  </div>
-</div>
-
-<!-- HELP -->
-<div id="helpPopup" class="popup">
-  <div class="popup-box">
-   <h2>Customer Care</h2>
-    <p>📞 1800-103-6065</p>
-    <p>📞 12150 (Airtel Users)</p>
- <p>
-      🌐 <a href="https://www.airtel.in/digital-tv/dth-contact-us/customer-care" target="_blank">
-        Regional Support Link
-      </a>
-    </p>
-
-    <button onclick="closeHelp()">Close</button>
-  </div>
-</div>
-
-
-<!-- FOOTER -->
-<footer class="footer-bar">
-  <button onclick="openLoan()">Loan</button>
-  <button onclick="openHelp()">Help</button>
-  <button onclick="window.location.href='emp.html'">Employees</button>
-</footer>
 
 <script>
-setInterval(()=> {
-  document.getElementById("clock").innerText = new Date().toLocaleString();
+
+/* IMAGE SLIDER */
+
+const slides = document.querySelectorAll(".slide");
+
+let slideIndex = 0;
+
+function showSlide(){
+
+    slides.forEach(slide=>{
+        slide.classList.remove("active");
+    });
+
+    slides[slideIndex].classList.add("active");
+
+    slideIndex++;
+
+    if(slideIndex >= slides.length){
+        slideIndex = 0;
+    }
+}
+
+setInterval(showSlide,3000);
+
+
+/* COUNTDOWN TIMER */
+
+const endDate = new Date("May 14, 2026 23:59:59").getTime();
+
+const timer = setInterval(function(){
+
+    const now = new Date().getTime();
+
+    const distance = endDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if(distance < 0){
+
+        clearInterval(timer);
+
+        document.querySelector(".countdown").innerHTML =
+        "<h3>Offer Ended</h3>";
+
+    }
+
 },1000);
 
-function openForm(p){
-  document.getElementById("planTitle").innerText = p;
-  document.getElementById("formPopup").style.display="flex";
-}
-function closeForm(){
-  document.getElementById("formPopup").style.display="none";
-}
-
-function openLoan(){
-  document.getElementById("loanPopup").style.display="flex";
-}
-function closeLoan(){
-  document.getElementById("loanPopup").style.display="none";
-}
-
-function openHelp(){
-  document.getElementById("helpPopup").style.display="flex";
-}
-function closeHelp(){
-  document.getElementById("helpPopup").style.display="none";
-}
 </script>
 
 </body>
