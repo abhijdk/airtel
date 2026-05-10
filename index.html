@@ -563,36 +563,43 @@
 </div>
 
 <script>
-    // Smooth Product Slider Animation
+    // Slider (unchanged)
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
-    
+
     function nextSlide() {
         slides[currentSlide].classList.remove("active");
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add("active");
     }
-    // Change slide every 4 seconds
     setInterval(nextSlide, 4000);
 
-    // Dynamic Evergreen Countdown Timer (Always resets to 4 hours to drive urgency)
-    let countdownTime = 4 * 60 * 60; // 4 hours in seconds
+    // ⏳ FIXED 4-DAY COUNTDOWN TIMER
+    const endTime = new Date().getTime() + (4 * 24 * 60 * 60 * 1000); // 4 days
 
     const updateTimer = setInterval(() => {
-        if (countdownTime <= 0) {
-            countdownTime = 4 * 60 * 60; // Reset timer for demo purposes
+        const now = new Date().getTime();
+        const remaining = endTime - now;
+
+        if (remaining <= 0) {
+            clearInterval(updateTimer);
+            document.getElementById("days").innerText = "00";
+            document.getElementById("hours").innerText = "00";
+            document.getElementById("minutes").innerText = "00";
+            document.getElementById("seconds").innerText = "00";
+            return;
         }
 
-        const h = Math.floor(countdownTime / 3600);
-        const m = Math.floor((countdownTime % 3600) / 60);
-        const s = countdownTime % 60;
+        const d = Math.floor(remaining / (1000 * 60 * 60 * 24));
+        const h = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+        const m = Math.floor((remaining / (1000 * 60)) % 60);
+        const s = Math.floor((remaining / 1000) % 60);
 
-        document.getElementById("days").innerText = "00";
+        document.getElementById("days").innerText = d.toString().padStart(2, '0');
         document.getElementById("hours").innerText = h.toString().padStart(2, '0');
         document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
         document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
 
-        countdownTime--;
     }, 1000);
 </script>
 
