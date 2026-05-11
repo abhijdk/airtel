@@ -6,11 +6,7 @@
     
     <!-- SEO & Open Graph Tags -->
     <title>Smart Soundbox Deals | Fast UPI Payment Alerts</title>
-    <meta name="description" content="Upgrade your business with the smartest UPI Soundbox. Get instant voice alerts, zero rental plans, and 24/7 merchant support. Claim your exclusive discount today!">
-    <meta property="og:title" content="Smart Soundbox Deals | Fast UPI Payment Alerts">
-    <meta property="og:description" content="Exclusive merchant discounts on smart payment soundboxes. Fast installation and premium support.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/ff3333/ffffff?text=Smart+Soundbox+Deals">
+    <meta name="description" content="Upgrade your business with the smartest UPI Soundbox. Get instant voice alerts, zero rental plans, and 24/7 merchant support.">
     
     <!-- Professional Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +14,6 @@
 
     <style>
         :root {
-            /* Modern Fintech Red Theme - Safe & Premium */
             --brand-red: #ef233c;
             --brand-dark: #d90429;
             --brand-gradient: linear-gradient(135deg, #ff4b5c 0%, #d90429 100%);
@@ -44,7 +39,6 @@
             line-height: 1.6;
         }
 
-        /* Mobile-First Funnel Container */
         .container {
             width: 100%;
             max-width: 500px;
@@ -56,14 +50,13 @@
             overflow-x: hidden;
         }
 
-        /* Glassmorphism Utilities */
         .glass-card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: var(--border-radius);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
         /* HERO SECTION */
@@ -76,222 +69,7 @@
             position: relative;
         }
 
-        /* Animated Offer Badge */
-        .animated-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            margin-bottom: 24px;
-            text-transform: uppercase;
-            border: 1px solid rgba(255,255,255,0.4);
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-5px); }
-        }
-
-        .hero h1 {
-            font-size: 34px;
-            line-height: 1.2;
-            font-weight: 800;
-            margin-bottom: 16px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .hero p {
-            font-size: 16px;
-            opacity: 0.95;
-            font-weight: 400;
-        }
-
-        /* OFFER & TIMER CARD */
-        .offer-card {
-            margin: -40px 20px 0;
-            padding: 24px;
-            text-align: center;
-            position: relative;
-            z-index: 10;
-        }
-
-        .offer-tagline {
-            color: var(--brand-red);
-            font-weight: 800;
-            font-size: 15px;
-            margin-bottom: 16px;
-            display: block;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .countdown {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        .time-box {
-            background: var(--surface);
-            padding: 12px 5px;
-            border-radius: 14px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-            border: 1px solid #eee;
-        }
-
-        .time-box h3 {
-            font-size: 22px;
-            color: var(--brand-red);
-            font-weight: 800;
-        }
-
-        .time-box span {
-            font-size: 11px;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        /* COMMON SECTION STYLES */
-        .section { padding: 40px 24px; }
-        
-        .section-title {
-            font-size: 24px;
-            font-weight: 800;
-            margin-bottom: 24px;
-            text-align: center;
-            color: var(--text-main);
-        }
-
-        /* LEAD FORM SECTION */
-        .lead-form {
-            padding: 30px 20px;
-            margin: 20px;
-        }
-
-        .form-group { margin-bottom: 16px; }
-
-        .form-control {
-            width: 100%;
-            padding: 16px;
-            border: 1.5px solid #e1e1e1;
-            border-radius: 12px;
-            font-size: 15px;
-            transition: all 0.3s ease;
-            background: var(--surface);
-        }
-
-        .form-control:focus {
-            outline: none;
-            border-color: var(--brand-red);
-            box-shadow: 0 0 0 4px rgba(239, 35, 60, 0.1);
-        }
-
-        /* PRODUCT SLIDER - Updated to 9:16 aspect ratio */
-        .slider-wrapper {
-            width: 100%;
-            aspect-ratio: 9 / 16;
-            position: relative;
-            overflow: hidden;
-            border-radius: var(--border-radius);
-            background: var(--surface);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            margin-bottom: 24px;
-        }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            transform: scale(1.05);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .slide.active {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* FEATURES & BENEFITS GRID */
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .feature-item {
-            background: var(--surface);
-            padding: 24px 16px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease;
-        }
-
-        .feature-item:hover { transform: translateY(-3px); }
-
-        .feature-icon {
-            font-size: 32px;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .feature-item h3 { font-size: 14px; font-weight: 700; color: var(--text-main); }
-        .feature-item p { font-size: 12px; color: var(--text-secondary); margin-top: 5px; }
-
-        /* HOW IT WORKS / PROCESS */
-        .process-steps {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            background: var(--surface);
-            padding: 16px;
-            border-radius: 16px;
-        }
-
-        .step-number {
-            width: 40px;
-            height: 40px;
-            background: rgba(239, 35, 60, 0.1);
-            color: var(--brand-red);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 18px;
-            flex-shrink: 0;
-        }
-
-        /* TESTIMONIALS */
-        .testimonial {
-            background: var(--surface);
-            padding: 20px;
-            border-radius: 16px;
-            margin-bottom: 16px;
-            border-left: 4px solid var(--brand-red);
-        }
-
-        .stars { color: #FFD700; font-size: 14px; margin-bottom: 8px; }
-        .testimonial-text { font-size: 14px; font-style: italic; margin-bottom: 10px; }
-        .testimonial-author { font-size: 13px; font-weight: 700; }
-
-        /* FAQ */
+		/* FAQ */
         .faq-item {
             background: var(--surface);
             border-radius: 12px;
@@ -303,104 +81,130 @@
         .faq-item h3 { font-size: 15px; font-weight: 600; }
         .faq-item p { font-size: 14px; color: var(--text-secondary); margin-top: 8px; display: none; }
         .faq-item.active p { display: block; }
-
-        /* BUTTONS & CTA */
-        .btn {
-            display: flex;
+		
+        .animated-badge {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            padding: 18px;
-            border-radius: 14px;
-            border: none;
-            text-decoration: none;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 100px;
+            font-size: 13px;
             font-weight: 700;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.2s ease;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255,255,255,0.4);
+            animation: float 3s ease-in-out infinite;
         }
 
-        .btn-primary {
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .hero h1 { font-size: 34px; font-weight: 800; margin-bottom: 16px; }
+
+        /* OFFER & TIMER */
+        .offer-card { margin: -40px 20px 0; padding: 24px; text-align: center; position: relative; z-index: 10; }
+        .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        .time-box { background: var(--surface); padding: 12px 5px; border-radius: 14px; border: 1px solid #eee; }
+        .time-box h3 { font-size: 22px; color: var(--brand-red); font-weight: 800; }
+
+        /* PRODUCT SLIDER */
+        .slider-wrapper {
+            width: 100%;
+            aspect-ratio: 9 / 16;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+        }
+        .slide { position: absolute; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; }
+        .slide.active { opacity: 1; }
+
+        /* PRICING SECTION */
+        .pricing-section { padding: 40px 20px; }
+        .pricing-container { display: flex; flex-direction: column; gap: 30px; margin-top: 20px; }
+        
+        .price-card {
+            position: relative;
+            padding: 40px 24px 24px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Glowing Border Animation */
+        .glow-border {
+            border: 2px solid transparent;
+            background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), var(--brand-gradient);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            animation: border-dance 3s linear infinite;
+        }
+
+        @keyframes border-dance {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+
+        /* Discount Ribbons */
+        .ribbon {
+            position: absolute;
+            top: 15px;
+            right: -35px;
             background: var(--brand-gradient);
             color: white;
-            box-shadow: 0 8px 20px rgba(239, 35, 60, 0.3);
-        }
-
-        .btn-secondary {
-            background: var(--surface);
-            color: var(--text-main);
-            border: 2px solid #eee;
-        }
-
-        .btn-whatsapp {
-            background: var(--success);
-            color: white;
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn:active { transform: scale(0.97); }
-
-        /* Pulse Animation for Sticky CTA */
-        @keyframes pulse-shadow {
-            0% { box-shadow: 0 0 0 0 rgba(239, 35, 60, 0.6); }
-            70% { box-shadow: 0 0 0 15px rgba(239, 35, 60, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(239, 35, 60, 0); }
-        }
-
-        .btn-pulse {
-            animation: pulse-shadow 2s infinite;
-        }
-
-        /* STICKY FOOTER */
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            max-width: 500px;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            padding: 15px 24px 25px;
-            border-top: 1px solid #f0f0f0;
-            z-index: 1000;
-        }
-
-        /* FOOTER & LEGAL */
-        footer {
-            text-align: center;
-            padding: 40px 24px 100px;
-            background: #111;
-            color: #888;
-        }
-
-        footer h4 { color: #fff; margin-bottom: 8px; font-size: 16px; }
-        footer p { font-size: 12px; margin-bottom: 12px; line-height: 1.5; }
-        
-        .disclaimer {
+            padding: 5px 40px;
             font-size: 11px;
-            color: #666;
-            border-top: 1px solid #333;
-            padding-top: 16px;
-            margin-top: 16px;
+            font-weight: 800;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-transform: uppercase;
         }
+
+        .price-title { font-size: 18px; font-weight: 700; color: var(--text-main); margin-bottom: 8px; }
+        .old-price { font-size: 18px; color: var(--text-secondary); text-decoration: line-through; opacity: 0.7; }
+        .offer-price { font-size: 48px; font-weight: 800; color: var(--brand-red); line-height: 1; margin: 5px 0; }
+        .highlight-box { background: rgba(239, 35, 60, 0.08); padding: 8px; border-radius: 10px; margin: 15px 0; font-size: 14px; font-weight: 600; color: var(--brand-dark); }
+        .small-text { font-size: 13px; color: var(--text-secondary); margin-bottom: 15px; display: block; }
+
+        /* BUTTONS */
+        .btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            width: 100%; padding: 18px; border-radius: 14px; border: none;
+            text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.2s ease;
+        }
+        .btn-whatsapp { background: var(--success); color: white; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2); }
+        .btn-primary { background: var(--brand-gradient); color: white; box-shadow: 0 8px 20px rgba(239, 35, 60, 0.3); }
+
+        .section-title { font-size: 24px; font-weight: 800; text-align: center; margin-bottom: 10px; }
+        .promo-badge { background: #000; color: #fff; padding: 4px 12px; border-radius: 5px; font-size: 12px; font-weight: 700; }
+
+        /* General Sections */
+        .section { padding: 40px 24px; }
+        .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .feature-item { background: var(--surface); padding: 20px; border-radius: 16px; text-align: center; }
+        
+        footer { background: #111; color: #888; padding: 40px 24px 100px; text-align: center; font-size: 12px; }
+        .sticky-footer { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 500px; background: rgba(255,255,255,0.95); padding: 15px 24px; z-index: 1000; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Hero Section -->
     <header class="hero">
-        <div class="animated-badge">✨ Exclusive Merchant Offer</div>
-        <h1>Upgrade to Smart Payment Alerts</h1>
-        <p>Instant voice notifications for every UPI transaction. Zero fraud, zero missed payments.</p>
+        <div class="animated-badge">✨ Limited Stock Available</div>
+        <h1>Upgrade to Airtel Smart Sound Box Alerts</h1>
+		<p>
+Instant voice notifications for every UPI transaction with Airtel Sound Box.
+Fast payments, zero missed alerts, and smarter business operations.
+</p>
     </header>
 
-    <!-- Offer & Countdown -->
     <div class="glass-card offer-card">
-        <span class="offer-tagline">🔥 Special Promo Ends In:</span>
-        <div class="countdown" id="timer">
+        <span class="promo-badge">Limited Time Offer</span>
+        <div class="countdown" id="timer" style="margin-top:15px;">
             <div class="time-box"><h3 id="days">00</h3><span>Days</span></div>
             <div class="time-box"><h3 id="hours">00</h3><span>Hrs</span></div>
             <div class="time-box"><h3 id="minutes">00</h3><span>Min</span></div>
@@ -408,42 +212,56 @@
         </div>
     </div>
 
-    <!-- Lead Generation Form -->
-    <!-- 
-    <section class="section" id="apply-now">
-        <div class="glass-card lead-form">
-            <h2 class="section-title" style="font-size: 20px; margin-bottom: 20px;">Check Availability & Get Offer</h2>
-            <form id="leadForm" onsubmit="event.preventDefault(); alert('Request submitted! Our team will contact you shortly.');">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Full Name" required>
+    <!-- PREMIUM PRICING SECTION -->
+    <section class="pricing-section" id="pricing">
+        <h2 class="section-title">Select Your Plan</h2>
+        <p style="text-align: center; color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">Transparent pricing, no hidden costs</p>
+        
+        <div class="pricing-container">
+            <!-- Plan 1: Lifetime -->
+            <div class="glass-card price-card glow-border">
+                <div class="ribbon">BEST VALUE</div>
+                <h3 class="price-title">Lifetime Free Plan</h3>
+                <div class="old-price">₹1499</div>
+                <div class="offer-price">₹999</div>
+                <div class="highlight-box">
+                    “One-Time Payment • Lifetime Usage”
                 </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Mobile Number" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Shop / Business Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="City / Pin Code" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-pulse">Get Offer Now</button>
-                <p style="text-align: center; font-size: 12px; color: #888; margin-top: 12px;">🔒 Your data is 100% secure.</p>
-            </form>
+                <a href="https://wa.me/919437712047?text=I%20am%20interested%20in%20the%20Soundbox%20Lifetime%20Offer" class="btn btn-whatsapp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" alt="WA"> Book on WhatsApp
+                </a>
+            </div>
+
+            <!-- Plan 2: Monthly -->
+            <div class="glass-card price-card">
+                <h3 class="price-title">Monthly Plan</h3>
+                <div class="old-price">₹899</div>
+                <div class="offer-price">₹499</div>
+                <span class="small-text">“₹29/month service charge”</span>
+                <a href="https://wa.me/919437712047?text=I%20am%20interested%20in%20the%20Soundbox%20Monthly%20Offer" class="btn btn-whatsapp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20" alt="WA"> Book on WhatsApp
+                </a>
+            </div>
         </div>
+
+        <p style="font-size: 11px; color: #999; text-align: center; margin-top: 25px; line-height: 1.4;">
+            “Special promotional pricing offered independently by local sales representatives. This is not an official company discount.”
+        </p>
     </section>
-    -->
+	
+	
 
     <!-- Product Display -->
     <section class="section">
         <h2 class="section-title">Premium Hardware</h2>
         <div class="slider-wrapper">
-            <!-- Using placeholders with loading="lazy" for performance -->
-            <img src="image/image1.png" class="slide active" alt="Soundbox Angle 1" loading="lazy">
-            <img src="image/image2.png" class="slide" alt="Soundbox Angle 2" loading="lazy">
-            <img src="image/image3.png" class="slide" alt="Soundbox Angle 3" loading="lazy">
+            <img src="image/image1.png" class="slide active" alt="Soundbox 1">
+            <img src="image/image2.png" class="slide" alt="Soundbox 2">
+            <img src="image/image3.png" class="slide" alt="Soundbox 3">
         </div>
     </section>
 
+    <!-- Features -->
     <!-- Benefits for Shop Owners -->
     <section class="section" style="background: #ffffff;">
         <h2 class="section-title">Why Merchants Love It</h2>
@@ -470,51 +288,8 @@
             </div>
         </div>
     </section>
-
-    <!-- Installation Process -->
-    <section class="section">
-        <h2 class="section-title">Quick & Easy Setup</h2>
-        <div class="process-steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px;">Submit Details</h4>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Fill the quick form above</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px;">Fast Verification</h4>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Our agent verifies your shop</p>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div>
-                    <h4 style="font-size: 16px; margin-bottom: 4px;">24Hr Installation</h4>
-                    <p style="font-size: 13px; color: var(--text-secondary);">Device mapped and ready to use</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust / Testimonials -->
-    <section class="section" style="background: #ffffff;">
-        <h2 class="section-title">Trusted by 10,000+ Shops</h2>
-        <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"Ever since I got this, I don't have to check my phone for every customer. The loud voice alert saves me so much time during peak hours."</p>
-            <p class="testimonial-author">- Rahul G., Grocery Store Owner</p>
-        </div>
-        <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p class="testimonial-text">"Battery life is amazing. Only have to charge it twice a week. Very premium look for my cafe counter."</p>
-            <p class="testimonial-author">- Priya S., Cafe Manager</p>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
+	
+	    <!-- FAQ Section -->
     <section class="section">
         <h2 class="section-title">Frequently Asked Questions</h2>
         <div class="faq-item" onclick="this.classList.toggle('active')">
@@ -530,8 +305,9 @@
             <p>We provide comprehensive merchant support. If hardware issues occur, our field executives will replace the unit quickly to ensure zero business downtime.</p>
         </div>
     </section>
-
-    <!-- Support Section -->
+	
+	
+	  <!-- Support Section -->
     <section class="section" style="padding-bottom: 120px;">
         <h2 class="section-title">Need Help?</h2>
         <a href="https://wa.me/919437712047?text=I%20want%20to%20know%20more%20about%20the%20Soundbox%20Deal" class="btn btn-whatsapp" style="margin-bottom: 16px;">
@@ -542,67 +318,54 @@
         </a>
     </section>
 
-    <!-- Legal Footer -->
     <footer>
-        <h4>SpringWave7 Promotional Campaign</h4>
+        <h4 style="color:#fff; margin-bottom:10px;">SpringWave7 Promotional Campaign</h4>
+		
+        <p>Email: abhinnabehuria@outlook.com</p>
         <p>Independent merchant support & promotional assistance.</p>
-        <p>Email: support@springwave7-promo.in</p>
-        
-        <div class="disclaimer">
-            <p><strong>Disclaimer:</strong> Independent promotional service provider. This website is not the official Airtel website and is not directly affiliated with Bharti Airtel Ltd. All product names, logos, and brands are property of their respective owners. Information provided is for promotional purposes.</p>
-            <p>&copy; 2026 SpringWave7 Promotions. All rights reserved.</p>
-        </div>
+        <p style="margin-top:15px; border-top: 1px solid #333; padding-top:15px; font-size:10px;">
+            Disclaimer: Independent promotional service provider. This website is not the official Airtel website and is not directly affiliated with Bharti Airtel Ltd.
+        </p>
     </footer>
 
-    <!-- Sticky Bottom CTA -->
     <div class="sticky-footer">
-        <button class="btn btn-primary btn-pulse" onclick="document.getElementById('apply-now').scrollIntoView();">
+        <a href="#pricing" class="btn btn-primary" style="animation: pulse-shadow 2s infinite;">
             Claim Your Discount Now
-        </button>
+        </a>
     </div>
 </div>
 
-
 <script>
-    // Slider (unchanged)
+    // Slider Logic
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
-
-    function nextSlide() {
+    setInterval(() => {
         slides[currentSlide].classList.remove("active");
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add("active");
-    }
-    setInterval(nextSlide, 4000);
+    }, 4000);
 
-    // ⏳ FIXED DEADLINE: 14 May 2026, 11:58 PM
-    const endTime = new Date("2026-05-14T23:58:00").getTime();
-
-    const updateTimer = setInterval(() => {
+    // Timer Logic
+    const endTime = new Date("2026-05-15T23:59:59").getTime();
+    setInterval(() => {
         const now = new Date().getTime();
-        const remaining = endTime - now;
-
-        if (remaining <= 0) {
-            clearInterval(updateTimer);
-            document.getElementById("days").innerText = "00";
-            document.getElementById("hours").innerText = "00";
-            document.getElementById("minutes").innerText = "00";
-            document.getElementById("seconds").innerText = "00";
-            return;
+        const diff = endTime - now;
+        if (diff > 0) {
+            document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+            document.getElementById("hours").innerText = Math.floor((diff / (1000 * 60 * 60)) % 24).toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = Math.floor((diff / (1000 * 60)) % 60).toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = Math.floor((diff / 1000) % 60).toString().padStart(2, '0');
         }
-
-        const d = Math.floor(remaining / (1000 * 60 * 60 * 24));
-        const h = Math.floor((remaining / (1000 * 60 * 60)) % 24);
-        const m = Math.floor((remaining / (1000 * 60)) % 60);
-        const s = Math.floor((remaining / 1000) % 60);
-
-        document.getElementById("days").innerText = d.toString().padStart(2, '0');
-        document.getElementById("hours").innerText = h.toString().padStart(2, '0');
-        document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
-        document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
-
     }, 1000);
 </script>
+
+<style>
+    @keyframes pulse-shadow {
+        0% { box-shadow: 0 0 0 0 rgba(239, 35, 60, 0.6); }
+        70% { box-shadow: 0 0 0 15px rgba(239, 35, 60, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(239, 35, 60, 0); }
+    }
+</style>
 
 </body>
 </html>
